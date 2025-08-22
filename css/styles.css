@@ -1,0 +1,1478 @@
+/*Fonts*/
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+* {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+a {
+
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  /*primary grid*/
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  background-color: #ffffff;
+}
+
+header {
+  /*reference for primary grid*/
+  grid-column: 1/2;
+  grid-row: 1/2;
+  /*sub grid set up*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  padding: 1em;
+  background-color: #52B8AF;
+  place-items: center;
+ 
+  
+  
+}
+
+
+
+
+#logo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#logo-item {
+  text-align: center;
+}
+
+
+
+
+/*-----------nav------------*/
+nav {
+  /*reference for primary grid*/
+  grid-column:2/4;
+  background-color: #52B8AF;
+
+ 
+  
+}
+
+
+nav ul {
+  /*subgrid*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  list-style-type: none;
+ 
+}
+
+
+li{
+ padding-left: 1em;
+ padding-right: 1em;
+}
+.icons-nav{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+
+li a {
+  
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------main------------*/
+
+/*Home*/
+#home {
+  background-color: white;
+  max-width: 100%;
+  min-height: auto;
+  /*reference for primary grid*/
+  grid-row: 3/4;
+  /*sub grid setup*/
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+ 
+}
+
+#vet-landing {
+  grid-row: 1/2;
+  position: relative;
+  height: 650px;
+  background-image: url('../images/Home/close-up-veterinary-doctor-taking-care-pet.jpg');
+  background-size: cover;
+  background-position: center top;
+
+}
+
+
+
+#vet-landing-text{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-end;
+  margin-top: 12em;
+  margin-right: 15em;
+  text-align: center;
+
+
+}
+
+#vet-landing-text h1{
+
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  
+  
+  
+}
+
+#vet-landing-text p{
+ margin: 1em;
+ color: white;
+ font-size: 30px;
+ font-weight: bold;
+ 
+ 
+}
+
+
+
+
+
+.compare-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  color: #fff; 
+  background-color: #52B8AF;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-top: 1em;
+  font-weight: bold;
+ 
+  
+}
+
+.compare-button:hover {
+  background-color: #3A8970; 
+}
+
+
+
+
+#vet-brief {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  padding: 5em 20em 5em 20em;
+  place-items: center;
+ 
+ 
+}
+
+
+#vet-brief-welcome {
+  grid-column: 1/2;
+ 
+ 
+ 
+  
+}
+
+#vet-brief-welcome h1  {
+  
+  font-size: 35px;
+  font-weight: bold;
+  color: #00858E;
+  margin-bottom: 1em;
+  
+  
+}
+#vet-brief-welcome p  {
+  color: #000000;
+  font-size: 20px;
+  margin-bottom: 2em;
+  
+  
+}
+
+#vet-brief-image {
+  grid-column: 2/3;
+ 
+}
+
+#vet-brief-image img{
+  height: 600px;
+  place-items: center;
+
+}
+
+
+
+
+#vet-features{
+  grid-row: 3/4;
+ display: grid;
+ grid-template-rows: repeat(4,auto); 
+ background-color: #F5F5DC;
+}
+#vet-features-text{
+  grid-row: 1/2;
+  padding: 5em 20em 5em 20em;
+}
+
+#vet-features-text h1{
+ font-size: 35px;
+  color: #00858E;
+  margin-bottom: 1em;
+  text-align: center;
+  
+  
+}
+
+#vet-features-text p{
+  font-size: 20px;
+   color:#000000;
+   margin-bottom: 1em;
+   text-align: center;
+    
+ }
+
+
+ #vet-features-container-cards1{
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+
+ }
+
+
+ .row-card{
+  width: 350px;
+  height: 400px;
+  background-color: #00858E;
+  margin-left: 3em;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+ }
+
+ .right{
+  transition: transform 0.3s ease ;
+ }
+
+ .right:hover{
+  transform: translateX(20px) !important; 
+ }
+
+ .row-card:hover {
+  transform: translateX(-20px); /* Desplaza el contenedor 20px horizontalmente cuando se pasa el cursor sobre él */
+}
+
+
+ .row-card img{
+  margin-top: 1em;
+ }
+ .row-card p{
+  margin-left: 1em;
+  margin-right: 1em;
+ }
+
+ #vet-features-container-cards1 h2{
+  font-size: 25px;
+  color: #fff;
+  margin-bottom: 1em;
+ 
+ 
+ }
+
+ #vet-features-container-cards1 p{
+  font-size: 20px;
+  color:#000000;
+  margin-bottom: 1em;
+ 
+ }
+
+ #vet-features-container-cards2{
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2em;
+ }
+
+ #vet-features-container-cards2 h2{
+  font-size: 25px;
+  color: #fff;
+  margin-bottom: 1em;
+ 
+ 
+ }
+
+ #vet-features-container-cards2 p{
+  font-size: 20px;
+  color:#000000;
+  margin-bottom: 1em;
+ 
+ }
+
+
+ #vet-features-join{
+  grid-row: 4/5;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3em;
+
+ }
+
+
+
+ #join-card{
+  
+  width: 500px;
+  height: 200px;
+  background-color:  #52B8AF;
+  border-radius: 10px;
+  margin-bottom: 2em;
+
+ }
+
+ #join-card h2{
+  margin-top: 1em;
+ 
+ }
+
+ #join-card:hover {
+  background-color: #3A8970; 
+}
+
+
+
+
+
+ #vet-features-join h2{
+  font-size: 25px;
+  color: #fff;
+  margin-bottom: 1em;
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+ }
+
+
+ #vet-brief-treatment{
+  grid-row: 4/5;
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  padding: 5em 20em 5em 20em;
+  text-align: center;
+  
+
+
+
+
+ 
+ 
+
+}
+
+#vet-brief-treatment-image{
+  grid-column: 1/2;
+  height: 600px;
+  width: auto;
+  margin-right: 5em;
+
+ 
+
+  
+}
+
+
+#vet-brief-treatment-welcome{
+  margin-top: 5em;
+  grid-column: 2/3;
+  
+
+}
+
+#vet-brief-treatment-welcome h1{
+ font-size: 35px;
+  color: #00858E;
+  margin-bottom: 1em;
+  text-align: center;
+  
+  
+}
+
+#vet-brief-treatment-welcome p{
+  font-size: 20px;
+   color:#000000;
+   margin-bottom: 1em;
+   text-align: center;
+    
+ }
+
+
+ 
+#vet-type-pets {
+  grid-row: 5/6;
+  display: grid;
+  grid-template-rows: repeat(2,auto);
+  background-color: #52B8AF;
+  justify-content: center;
+
+}
+
+#vet-type-pets-text{
+  grid-row: 1/2;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+#vet-type-pets-text h1{
+  font-size: 35px;
+  color: #ffffff;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+#vet-type-pets-text p{
+  font-size: 20px;
+   color:#000;
+   margin-bottom: 1em;
+   text-align: center;
+   
+ }
+
+#vet-type-pets-images{
+  grid-row: 2/3;
+  margin-bottom: 2em;
+ text-align: center;
+ 
+  
+}
+
+
+
+
+#vet-type-pets-images img{
+  border-radius: 50%;
+  border:8px solid #ffffff;
+  margin: 1em;
+ 
+}
+
+
+/*compare.php*/
+
+#wrapper-compare{
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  /*primary grid*/
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  background-color: #ffffff;
+
+}
+#home-compare{
+  background-color: white;
+  max-width: 100%;
+  min-height: auto;
+  /*reference for primary grid*/
+  grid-row: 3/4;
+  /*sub grid setup*/
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+
+}
+
+
+
+#compare-landing {
+  grid-row: 1/2;
+  position: relative;
+  height: 200px;
+  background-color:#52B8AF;
+
+}
+
+
+
+#compare-landing-text{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content:center;
+  margin-top: 5em;
+  
+
+
+}
+
+#compare-landing-text h1{
+
+  color:#fff ;
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+
+#compare-filters{
+  grid-row: 2/3;
+}
+
+.form-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+
+
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  
+  margin-bottom: 8px;
+  color: #00858E;
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+select {
+  /* Estilos generales */
+  width: 200px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none; /* Elimina el contorno al recibir el foco */
+  color: #000;
+
+  /* Estilos específicos del dropdown */
+
+  ;
+}
+
+/* Estilos para cuando el select está enfocado */
+select:focus {
+  border-color: #007bff; /* Cambia el color del borde al enfocar */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Agrega una sombra al enfocar */
+  
+}
+
+/* Estilos para cuando el select está deshabilitado */
+select:disabled {
+  opacity: 0.5; /* Reduce la opacidad cuando está deshabilitado */
+  cursor: not-allowed; /* Cambia el cursor a 'no permitido' */
+}
+
+select option {
+  color: #000; 
+}
+
+
+
+
+
+input[type="submit"] {
+  background-color: #00858E;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 1em;
+  width: 60px;
+
+ 
+
+}
+
+input[type="submit"]:hover {
+  background-color: #52B8AF;
+}
+
+
+::placeholder {
+  text-align: center;
+}
+
+
+
+#search-results{
+  grid-row: 3/4;
+ 
+
+}
+
+#search-results-container{
+  display: grid;
+  grid-template-columns: repeat(4,auto);
+
+
+}
+
+#search-results-sidebar{
+  grid-column: 1/2;
+  background-color:#52B8AF;
+  width: 250px;
+  padding: 20px;
+  margin-left: 10em;
+ 
+}
+
+
+
+.preferences-form h2{
+  font-size: 20px;
+  color:#52B8AF;
+  margin-bottom: 1em;
+  text-align: center;
+
+}
+
+.preferences-form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+  align-items: flex-start;
+  
+}
+
+input[type="checkbox"] {
+  margin-right: 10px; /* Aumentamos el espacio entre la caja y el texto */
+  width: 20px; /* Ajustamos el ancho de la caja */
+  height: 20px; /* Ajustamos la altura de la caja */
+}
+
+#search-result-cards-container{
+  grid-column: 2/5;
+ 
+ 
+}
+
+#search-result-cards{
+padding: 20px;
+margin-right: 10em;
+margin-top: 2em;
+margin-bottom: 2em;
+border-radius: 20px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+
+}
+#search-result-cards h2{
+  text-align: center;
+  color: #52B8AF;
+  margin-bottom: 1em;
+}
+
+#search-result-cards p{
+
+  font-size: 25px;
+  color: #52B8AF;
+
+
+}
+
+
+
+#browse-by-pet{
+  grid-row: 4/5;
+ 
+ 
+
+  
+}
+
+#browse-by-pet-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+
+
+#browse-by-pet-text h1{
+  font-size: 25px;
+  color:#00858E;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  text-align: left;
+  margin-top: 3em;
+}
+
+#browse-by-pet-images img{
+  border-radius: 10px;
+  margin-left: 1em;
+
+}
+
+
+
+
+#browse-by-treatment{
+  grid-row: 5/6;
+ 
+ 
+
+  
+}
+
+#browse-by-treatment-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+
+
+#browse-by-treatment-text h1{
+  font-size: 25px;
+  color:#00858E;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  text-align: left;
+  margin-top: 3em;
+}
+
+#browse-by-treatment-images img{
+  border-radius: 10px;
+  margin-left: 1em;
+  margin-bottom: 2em;
+
+}
+
+.browse-by-treatment-images{
+  text-align: center;
+}
+
+
+.hide{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+/*About*/
+
+#about {
+  background-color: white;
+  max-width: 100%;
+  min-height: auto;
+  padding: 5em 10em 5em 10em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  grid-row: 3/4;
+}
+
+#pawsy-about {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+
+
+.title-div {
+  grid-row: 1/2;
+}
+
+.title-div h2 {
+  font-size: 45px;
+  color: #00858E;
+  text-align: center;
+  margin: 1em 0;
+}
+
+
+#container-doctors {
+  grid-row: 2/3;
+
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+
+}
+
+.pawsy-doctors {
+  grid-column: 1/2;
+  padding-left: 8em;
+  margin-top: 5em;
+}
+
+
+
+.pawsy-doctors h2 {
+  font-size: 35px;
+  color: #00858E;
+  margin-bottom: 1em;
+}
+
+.pawsy-doctors p {
+  font-size: 30px;
+  color: #00858E;
+}
+
+
+.pawsy-doctor-image {
+  grid-column: 3/4;
+  padding-top: 6em;
+  padding-right: 8em;
+}
+
+/*Testimonials*/
+
+#testimonials {
+  background-color: white;
+  max-width: 100%;
+  min-height: auto;
+  padding: 5em 10em 5em 10em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+
+.title-div {
+  grid-row: 1/2;
+}
+.title-div h1 {
+  color: #00858E;
+  text-align: center;
+ font-size: 45px;
+margin-bottom: 1em;
+margin-top: 1em;
+
+
+
+
+}
+
+
+#section-testimonials-container {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.testimonials-container {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.testimonials-text {
+  grid-column: 1/2;
+}
+
+
+.testimonials-text h2 {
+  font-size: 35px;
+  color: #00858E;
+  margin-bottom: 1em;
+}
+
+.testimonials-text h3 {
+  font-size: 20px;
+  color: #00858E;
+  margin-bottom: 1em;
+}
+
+.testimonials-text p {
+  font-size: 30px;
+  color: #00858E;
+}
+
+/*Contact*/
+
+#contact {
+  background-color: white;
+  max-width: 100%;
+  min-height: auto;
+  padding: 0em 10em 5em 5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+
+.title-div {
+  grid-row: 1/2;
+}
+
+
+#pawsy-contact {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+#map-contact {
+  grid-column: 1/2;
+  padding-left: 5em;
+}
+
+#details-contact {
+  grid-column: 2/3;
+  padding-right: 5em;
+}
+
+
+#details-contact h2 {
+  font-size: 35px;
+  color: #00858E;
+  margin-bottom: 1em;
+
+
+}
+
+#details-contact p {
+  font-size: 20px;
+  color: #00858E;
+  margin-bottom: 1em;
+}
+
+
+
+
+#details-contact input[type=text],
+#details-contact input[type=email],
+#details-contact textarea,
+#details-contact input[type=submit] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#details-contact input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#details-contact input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+#map-contact iframe {
+  width: 90%; /* Ajusta el ancho del iframe al 100% del contenedor */
+  height: 400px; /* Ajusta la altura del iframe */
+  border: 1px solid #ccc; /* Agrega un borde al iframe */
+  border-radius: 4px; /* Agrega un borde redondeado */
+ 
+}
+
+
+
+
+/*Booking*/
+
+#book {
+  background-color: white;
+  max-width: 100%;
+  min-height: auto;
+  padding: 0em 5em 5em 5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  grid-row: 3/4;
+}
+
+
+#pawsy-booking {
+  padding: 0 6em;
+  
+}
+
+#pawsy-booking-container{
+  padding-top: 1em;
+
+
+}
+
+#pawsy-booking input[type=text],
+#pawsy-booking input[type=email],
+#pawsy-booking input[type=tel],
+#pawsy-booking input[type=date],
+#pawsy-booking textarea,
+#pawsy-booking select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#pawsy-booking input[type=submit] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#pawsy-booking input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/*----------------footer------------*/
+
+footer {
+  max-width: 100%;
+  min-height: auto;
+  /*reference for primary grid section*/
+  grid-row: 5/6;
+  /*sub grid setup*/
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-color: #F5F5DC;
+  gap: 1em;
+  
+}
+
+
+
+#footer-part1{
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2em;
+}
+
+#footer-part1 p{
+  color: #000;
+  margin-bottom: 2px;
+ 
+
+ 
+}
+
+#footer-part2{
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  min-height: auto;
+ 
+
+}
+#social-media img{
+ margin-left: 1em;
+}
+
+#copyright{
+  margin-left: 1em;
+ }
+
+ #copyright p{
+  color: #000;
+ }
+
+
+
+
+/*Tablets, Modern SmartPhones*/
+
+@media (max-width: 1300px) {
+
+
+  header {
+    display: block;
+  }
+
+
+ #home{
+  padding: 0;
+
+ }
+  nav ul {
+    flex-direction: column;
+    padding-top: 0em;
+  }
+
+
+
+#vet-brief{
+ display: block;
+ place-items: center;
+ padding: 0;
+
+ }.cen{text-align: center;}
+ .compare-button{
+  display: block;
+  text-align: center;}
+
+ #vet-brief-image{
+  text-align: center;
+  
+
+ }
+
+ 
+
+ #vet-features-container-cards1,
+ #vet-features-container-cards2{
+  flex-direction: column;
+  margin: 0;
+  align-items: center;
+  
+ }
+
+
+ #vet-features-text{
+  padding: 0;
+ }
+
+
+
+ #join-card{
+  width: auto;
+ }
+
+
+ #vet-brief-treatment{
+  display: grid;
+    grid-template-columns: auto;
+    padding: 0;
+    
+    
+   
+  }
+  
+  #vet-brief-treatment-image{
+    grid-column: 1;
+    
+    
+  }
+  
+  #vet-brief-treatment-welcome{
+     grid-column: 1;
+    
+     
+     
+    
+    
+ 
+  
+  }
+  
+
+  #vet-type-pets{
+    display: grid;
+      grid-template-columns: auto;
+  
+     
+    }
+    
+    #vet-type-pets-text{
+      grid-column: 1;
+      width: auto;
+      
+    }
+    
+    #vet-type-pets-images{
+       grid-column: 1;
+       width: auto;
+    
+    }
+
+
+
+    .form-row{
+      flex-direction: column;
+      align-items:center ;
+     }
+
+     #search-results{
+      place-content: center;
+     }
+     
+
+
+     #search-results-container{
+      display: grid;
+      grid-template-columns: auto;
+     
+    
+    
+    }
+    
+    #search-results-sidebar{
+      grid-column: 1;
+      display: none;
+     
+     
+    }
+    
+    
+    #search-result-cards-container{
+      grid-column: 1;
+     }
+
+  #social-media{
+    display: none;
+  }
+
+  #pawsy-info {
+    display: grid;
+    grid-template-columns: 1fr; 
+    
+  }
+
+  #pawsy-info-text {
+    padding: 1em; 
+    text-align: left; 
+    grid-column: 1; 
+    grid-row: 2; 
+  }
+
+  #pawsy-info-image {
+    grid-row: 1; 
+    grid-column: 1; 
+    padding: 0;
+    text-align: center;
+    
+  
+  }
+
+
+ 
+  
+
+
+  #pawsy-facilities-images {
+  display: grid;
+  grid-template-columns: 1fr;
+   
+  }
+
+  #pawsy-facilities-1{
+    grid-column: 1
+  }
+  #pawsy-facilities-2{
+    grid-column: 1
+  }
+
+  #map-container {
+    display: grid;
+    grid-template-columns: 1fr;
+     
+    }
+  
+    #map{
+      grid-column: 1
+    }
+    #details{
+      grid-column: 1
+    }
+  
+
+  
+ 
+#about{
+ 
+  padding: 0;
+  text-align: center;
+}
+
+  #container-doctors {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+ 
+
+
+  }
+
+  .pawsy-doctors {
+    margin: 0;
+    padding: 0;
+    grid-column: 1;
+  }
+
+  .pawsy-doctor-image
+  {
+    margin: 0;
+    padding: 0;
+    grid-column: 1;
+  }
+
+
+  #testimonials {
+    padding: 0;
+    
+  }
+  #book{
+    padding: 0;
+  }
+
+  #pawsy-booking {
+    padding: 0;
+  }
+  #contact {
+    padding: 0;
+  }
+
+  #pawsy-contact{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #map-contact{
+    grid-column: 1;
+    padding: 0;
+    text-align: center;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    
+  }
+  #details-contact{
+    grid-column: 1;
+    padding: 0;
+    text-align: center;
+  }
+
+
+  #footer-part1{
+    flex-direction: column;
+    align-items: center;
+   
+   }
+ 
+   .icons-nav div img{
+   display: none;
+   }
+
+}
